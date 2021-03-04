@@ -17,8 +17,8 @@ class DynamicStringPerfTest {
 
         10.step(maxStrings, 10) {Integer it ->
             long iterations = it.longValue()
-            time "stringBufferExample  - ${iterations}", { s1 = stringBufferExample(iterations) }
-            time "stringBuffer2Example - ${iterations}", { s2 = stringBuffer2Example(iterations) }
+            time "stringBuffer w/dynamic String Example - ${iterations}", { s1 = stringBufferExample(iterations) }
+            time "stringBuffer plain apppendage Example - ${iterations}", { s2 = stringBuffer2Example(iterations) }
             println "Resulting string is ${s1.length()} chars (and ${s2.length()} chars)."
             assert s1.length() > 1 // Værdien skal bruges, så en evt. compiler ikke optimerer den væk
             assert s2.length() > 1 // Værdien skal bruges, så en evt. compiler ikke optimerer den væk

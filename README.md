@@ -17,3 +17,22 @@ stringBuffer2Example | 10000000 | 2503ms | 2307ms | 501ms
 stringBuilderExample | 10000000 | 30679ms | 35917ms | n/a
 stringBuilder2Example | 10000000 | 2504ms | 2278ms | 497ms
 stringBuilder3Example | 10000000 | 2487ms | 2326ms | 554ms
+
+Dynamic String performance test:
+```
+stringBuffer w/dynamic String Example - 10 - 338ms elapsed.
+stringBuffer plain apppendage Example - 10 - 1ms elapsed.
+Resulting string is 55000 chars (and 55000 chars).
+stringBuffer w/dynamic String Example - 20 - 988ms elapsed.
+stringBuffer plain apppendage Example - 20 - 0ms elapsed.
+Resulting string is 210000 chars (and 210000 chars).
+stringBuffer w/dynamic String Example - 30 - 2935ms elapsed.
+stringBuffer plain apppendage Example - 30 - 1ms elapsed.
+Resulting string is 465000 chars (and 465000 chars).
+stringBuffer w/dynamic String Example - 40 - 6903ms elapsed.
+stringBuffer plain apppendage Example - 40 - 1ms elapsed.
+Resulting string is 820000 chars (and 820000 chars).
+stringBuffer w/dynamic String Example - 50 - 13561ms elapsed.
+stringBuffer plain apppendage Example - 50 - 2ms elapsed.
+Resulting string is 1275000 chars (and 1275000 chars).
+```
